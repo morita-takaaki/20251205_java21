@@ -12,26 +12,10 @@
 
   <p id="message">メッセージがここに表示されます</p>
 
-  <button id="redBtn">赤ボタン</button>
-  <button id="blueBtn">青ボタン</button>
+  <button id="redBtn" style="background-color: red; color: white;">赤ボタン</button>
+  <button id="blueBtn" style="background-color: blue; color: white;">青ボタン</button>
 
-  <!-- ここに直接 JavaScript を書く（テスト用） -->
-  <script>
-    let redCount = 0;
-    let blueCount = 0;
-
-    document.getElementById("redBtn").addEventListener("click", () => {
-      redCount++;
-      document.getElementById("message").innerText =
-        "赤ボタンを " + redCount + " 回押しました";
-    });
-
-    document.getElementById("blueBtn").addEventListener("click", () => {
-      blueCount++;
-      document.getElementById("message").innerText =
-        "青ボタンを " + blueCount + " 回押しました";
-    });
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>
